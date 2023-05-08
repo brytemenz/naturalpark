@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Andes Natural Park</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+  <header class="pageHeader">
+    <img src="assets/imgs/heroimage.jpg" alt="los andes natural park">
+    <h1>
+        <span>Los Andes</span>
+        <span class="green">Natural Park</span>
+      </h1>
+      
+  </header>
+  
+  <div class="mainContainer">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#" class="active">Start</a></li>
+        <li><a href="./species.html">Species</a></li>
+        <li><a href="./bookings.html">Bookings</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+      </ul>
+    </aside>
+    
+    <main>
+      <section>
+        <div class="welcome-section">
+          <h2>Photo Gallery</h2><hr>
+          <p>Here you can get an idea of what you get when visinting the park</p>
+          </p><p>We invite you to take youre camera take photos and send it to us to add it to this Gallery.<p>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://plus.unsplash.com/premium_photo-1674500476377-9362784ea824?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" alt="Gallery Item 1">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1676230937439-d94b9d4a5467?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Gallery Item 2">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1614752154921-0ad2b2ac4392?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80" alt="Gallery Item 3">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1526034332220-067b0f400e06?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=706&q=80" alt="Gallery Item 4">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1614640514617-684c8b4c3403?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=699&q=80" alt="Gallery Item 5">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1476922027627-aa7293e3aaa8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">
+            </div>
+            </div>
+              
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+<script>
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    galleryItems.forEach(item => {
+      const img = item.querySelector('img');
+      img.addEventListener('click', () => {
+        item.classList.toggle('zoom-in');
+      });
+    });
+
+   // When a link is clicked
+$(".sidebar ul li a").click(function() {
+    // Remove the active class from all links
+    $(".sidebar ul li a").removeClass("active");
+    // Add the active class to the clicked link
+    $(this).addClass("active");
+  });
+  
+</script>
+   
+
+</html>

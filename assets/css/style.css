@@ -1,3 +1,110 @@
+/* start of  index css */
+.pageHeader {
+    height: 50vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .pageHeader img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .pageHeader > h1 {
+    text-align: center;
+  }
+
+  .pageHeader > h1 {
+    text-align: center;
+  }
+  
+  .pageHeader > h1 span {
+    color:#c87305;
+  }
+  
+  .pageHeader > h1 span.green {
+    color: rgba(6, 121, 6, 0.711);
+  }
+  
+  .sidebar {
+    height: 100%;
+    position: absolute; 
+    top: 500px; 
+    left: 0;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar ul li a {
+    display: block;
+    padding: 15px;
+    color: #fffdfd;
+    text-decoration: none;
+    background-color: #fff;
+    margin-top: 10px;
+    border: solid black 1px;
+    background-color: #267803;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #c87305;
+    color: #fff;
+  }
+  
+  .sidebar ul li a.active {
+    background-color: #c87305;
+    color: #fff;
+  }
+  
+  .sidebar ul li a.active:hover {
+    background-color: #c87305;
+    color: #fff;
+  }
+  
+  main {
+    margin-left: 220px;
+    padding-top: 5vh;
+  }
+  
+  .welcome-section {
+    margin: 50px;
+    border: solid black 1px;
+    padding: 20px;
+    background-color: rgb(227, 225, 225);
+    shape-outside: margin-box;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  .welcome-section h2{
+    color: green;
+  
+  }
+
+  
+  
+
+
+/* end of index css */
+
+/* start of species css  */
+
 .container{
     margin: 100px;
     border: 1px solid #4a3f3f;
@@ -7,11 +114,11 @@
 .header h1{
     color: rgb(39, 203, 148);
 }
-.image{
-    max-width: 100%;
-    max-height:100%;
-    float: right;
-}
+
 .text h1{
     color: rgb(221, 168, 32);
 }
+
+
+/*  end of species css */
+
