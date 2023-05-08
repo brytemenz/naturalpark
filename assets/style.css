@@ -1,4 +1,18 @@
-.pageHeader {
+/* 
+_____________Colours ___________
+
+Headings : #8FB175
+Paragrapgh: 
+Links:
+Menu:
+others:#C1854D
+
+
+
+*/
+
+
+.page-header {
     height: 50vh;
     width: 100%;
     margin: 0;
@@ -7,7 +21,7 @@
     position: relative;
   }
   
-  .pageHeader img {
+  .page-header img {
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -18,26 +32,27 @@
    
   }
   
-  .pageHeader > h1 {
+
+  .page-header > h1 {
     text-align: center;
   }
 
-  .pageHeader > h1 {
+  .page-header > h1 {
     text-align: center;
   }
   
-  .pageHeader > h1 span {
-    color:#c87305;
+  .page-header > h1 span {
+    color:#C1854D;
   }
   
-  .pageHeader > h1 span.green {
-    color: rgba(6, 121, 6, 0.711);
+  .page-header > h1 span.green {
+    color:  #8FB175;
   }
   
   .sidebar {
     height: 100%;
     position: absolute; 
-    top: 500px; 
+    top: 490px; 
     left: 0;
     width: 200px;
     display: flex;
@@ -55,33 +70,36 @@
     margin: 0;
     padding: 0;
   }
-  
   .sidebar ul li a {
     display: block;
     padding: 15px;
     color: #fffdfd;
     text-decoration: none;
-    background-color: #fff;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-left: 50px;
     border: solid black 1px;
-    background-color: #267803;
+    background: linear-gradient(to bottom, #8FB175, #08cd01);
     border-radius: 10px;
+    width: 200px;
+    height: 10px;
+    text-align: center;
   }
   
   .sidebar ul li a:hover {
-    background-color: #c87305;
+    background: linear-gradient(to bottom, #c87305, #267803);
     color: #fff;
   }
   
-  .sidebar ul li a.active {
-    background-color: #c87305;
+  .sidebar ul li a:target {
+    background: linear-gradient(to bottom, #ff6a00, #C1854D);
     color: #fff;
   }
   
-  .sidebar ul li a.active:hover {
-    background-color: #c87305;
+  .sidebar ul li a:target:hover {
+    background: linear-gradient(to bottom, #e85d04, #ff6a00);
     color: #fff;
   }
+  
 
   main {
     margin-left: 220px;
@@ -103,11 +121,13 @@
   }
   
   .image-otter{
-    max-width: 100%;
-    max-height:100%;
+    max-width: 250px;
     float: right;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.otter-p{
+  color: #c87305;
 }
   
 .gallery-container {
@@ -136,4 +156,46 @@
   z-index: 9999;
 }
 
-  
+.table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #784303;
+  color: #fff;
+  text-align: center;
+}
+
+.table .tablesub {
+  background-color: #d7f8c8;
+  font-weight: bold;
+  text-align: center;
+}
+
+.table .ratessub {
+  background-color: #d7f8c8;
+  font-weight: bold;
+}
+
+.table td {
+  background-color: #fff;
+}
+
+.table tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+.table p {
+  margin: 0;
+}

@@ -106,7 +106,8 @@
 /* start of species css  */
 
 .container{
-    margin: 100px;
+    margin: 20%;
+    height: 100%;
     border: 1px solid #4a3f3f;
     padding-left: 10px;
     padding-right: 10px;
@@ -114,11 +115,19 @@
 .header h1{
     color: rgb(39, 203, 148);
 }
-
+.image{
+    max-width: 100%;
+    max-height:100%;
+    float: right;
+    padding-bottom: 10px;
+}
 .text h1{
     color: rgb(221, 168, 32);
 }
+.table{
+    padding-bottom: 10px;
+    margin-left: 80px;
+    
+}
 
-
-/*  end of species css */
 

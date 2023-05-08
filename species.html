@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-  <header class="pageHeader">
+  <header class="page-header">
     <img src="assets/imgs/heroimage.jpg" alt="los andes natural park">
     <h1>
         <span>Los Andes</span>
@@ -19,20 +19,22 @@
   
   <div class="mainContainer">
     <aside class="sidebar">
-      <ul>
-        <li><a href="#" class="active">Start</a></li>
-        <li><a href="./species.html">Species</a></li>
-        <li><a href="#">Bookings</a></li>
-        <li><a href="./gallery.html">Gallery</a></li>
-      </ul>
+        <ul>
+            <li><a href="./index.html"onclick="activateLink(this)">Start</a></li>
+            <li><a href="./species.html" onclick="activateLink(this)">Species</a></li>
+            <li><a href="./bookings.html" onclick="activateLink(this)">Bookings</a></li>
+            <li><a href="./gallery.html" onclick="activateLink(this)">Gallery</a></li>
+          </ul>
     </aside>
     
     <main>
       <section>
         <div class="welcome-section">
-            <h2>These are some of ther park's inhibitants</h2><hr>
-            <img src="./assets/imgs/otter.jpeg" alt="otther image" class="image-otter">
-                <h1>Otter</h1>
+            <h2>Park Species</h2><hr>
+            <img src="https://images.unsplash.com/photo-1582478683390-b209b1079fec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=703&q=80" alt="otther image" class="image-otter">
+            <p>These are some of ther park's inhibitants</p>
+
+                <h1 class="otter-p">Otter</h1>
                 <p>
                     Otters are carnivorous mammals in the subfamily Lutrinae.
                     The 13 extant otter species are all semiaquatic, aquatic,
@@ -41,7 +43,7 @@
                     includes weasels, badgers, mink, and wolverines, among other
                     animals. Wikipedia
                 </p>
-                <h1>Griffon Vulture</h1>
+                <h1 class="otter-p">Griffon Vulture</h1>
                 <p>
                     Otters are carnivorous mammals in the subfamily Lutrinae.
                     The 13 extant otter species are all semiaquatic, aquatic,
@@ -50,7 +52,7 @@
                     includes weasels, badgers, mink, and wolverines, among other
                     animals. Wikipedia
                 </p>
-                <h1>Genet</h1>
+                <h1 class="otter-p">Genet</h1>
                 <p>
                     Otters are carnivorous mammals in the subfamily Lutrinae.
                     The 13 extant otter species are all semiaquatic, aquatic,
@@ -64,4 +66,14 @@
     </main>
   </div>
 </body>
+<script>
+    function activateLink(link) {
+        var activeLink = document.querySelector('.sidebar ul li a.active');
+        if (activeLink) {
+          activeLink.classList.remove('active');
+        }
+        link.classList.add('active');
+      }
+      
+</script>
 </html>
