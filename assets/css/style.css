@@ -1,5 +1,6 @@
 .container{
     margin: 20%;
+    height: 100%;
     border: 1px solid #4a3f3f;
     padding-left: 10px;
     padding-right: 10px;
@@ -15,4 +16,18 @@
 }
 .text h1{
     color: rgb(221, 168, 32);
+}
+.table{
+    padding-bottom: 10px;
+    margin-left: 80px;
+}
+
+caption{
+    background-color: rgb(219, 155, 60);
+}
+th{
+    background-color: rgb(148, 238, 208);
+}
+td{
+    background-color: rgb(189, 236, 220);
 }
